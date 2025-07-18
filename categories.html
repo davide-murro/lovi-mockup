@@ -1,0 +1,181 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Project Finland - Categories</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#1f1a14] dark group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#40362b] px-10 py-3 gap-8">
+          <div class="flex items-center gap-8">
+            <a href="index.html" class="flex items-center gap-4 text-white">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">AudioTales</h2>
+            </a>
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="search.html">Browse</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Categories</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">My Library</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-4">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                <div
+                  class="text-[#bead9d] flex border-none bg-[#40362b] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#40362b] focus:border-none h-full placeholder:text-[#bead9d] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#40362b] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Sign In</span>
+            </button>
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#40362b] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-white" data-icon="Globe" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA96EsCG4I19cJK8QUzhtctfzneXFoNUTtgD40qYOvbyVHnJXZQkzXH-y6-0hVLlWfMopiYE7CGBlGZCzXrJeh06eZzhm_S6Mw3KOOxEhA1SpmBluaoWKvaDjbqCpI-z7KL5UcIXksN7S3C6zFEA_fvo53YypC1cgsGItYDomjax6sKd0Sht5ucHKAklnN__D9j7l7jVzqq27v2KKM00VjQysRI2qdzNpF9AYvKgWx9lsDaWemr0AzgEI5v_ECvrrHnTd9-OrS0UpA");'
+            ></div>
+          </div>
+        </header>
+
+        <div class="flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">Categories</p></div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCHQfNa4_kjcETB6lkNqVd6voXRs_xnVQczREYTHQ7BOLmR6ctH8-wqCocumI6J2T6p2S7FmlNvFuIC2_--i7mzeP1PYzP0HJrXM9ReB-SL6CkvChdecNUKod7oTnJqD7MD9xfGAbVOP10vZ1OBlAO4i4qRaC0hcpDbSVgau8dnKc4BwxfBxRyxqyuacrxrSifZcbKoeH-HBJLucXYwrP-uf-mCoE8klpbd0TJ0GugqxQGycnQyu6WGVeGcgcQcXqM0Vxt3ZtQeQs");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Fiction</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDl-hSCRf9lp4flTM08i-YVLlsLyQE06VobAzthaMcOoHHvKiMjEmM482SNJR8DQXUCq67lni9UyCdCxyiOoBoxSSz8qMBQuap0M-1xDbcTGSKVLPjB6sZNTb9_vPZu8BD8y6wPKnjn7U1PC2nQMs9OP3F0oYQGfn-sq4ehZBxwkTlOcfwx8849NACiKOXbmfZW9SAlVrU-mj3eILGR4pHwFStHJo6Me7_KG3SPZ7tqlKL0Xy0KxxcefME4l2Ut_8rjTA_at2B9VgQ");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Non-Fiction</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTp2ao4tV58RfWtn8Q93zWOrs5E_ohVPhmgGRVfJyJQpqWTphEdCecaBa0qQnFRgduLQr0oK0VIrk6HXOM6TX1kKDlpdD7SrVqqmMKCYXYInCinbD_Qbn2scdTNk8BLRHR-KxBa1Ipa7_mBLWVvjXERq8PG5dugxbqxgXFuXOExQkMzbioX2Mpo0mmQS1VACpsYPWH1gVLprZOQpOOaUtPZdPtF-m42hOeqdKGbADn_ELg3AvezjC2R7UvP0sMk06SpOBuuLZsg0A");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Sci-Fi</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLb7TimHKp60QsDR0fye12t-f9Z1WNWBQ10Pc5CeOIo5OKFwVbMb6RBWlrF5o9aTQy4DKo9A9DI2aiRvSXo4nYXMG3w7y-cstEjR2KEjeMtebH__GmY5Z0XzEnwPH5fs_lzdn47L_lPdUEqJ4Pe7SF_FHAMeaO53NfpBnnvH39VBqyF_piIssI13zZLOplZCXOvgBpE7i2RlVOUkvqD1TLR0cg1GMPVbba9hiOPSQ0FIzwWiC6EozMWJk0end2Vx3dXngWEPdvGpE");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Romance</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBoIY6S70JF9lJoo3OaaAfGkb0WMzssQ6mrrExZLDyun62O3wCAhdYDqfxkD0fKiva7EBBy6O-hGJmhssdfecd5ap3Gtng7GHwCGYyECcDb5nD-2WeLUWxVKdv4HQ6Vma4zeErvdK6fbgTOAtmJRp5fR07CTs14DjMpD1sqDzqYaDg4BogDysPinnB9cgTvX7dLBvCQ0CRFrMkG-w_oZ3RMvoSdDmg9ez1NKmbkDvA1dsAxC9nCsUJqEqUhtuIEOPQ8e9y0hZ30WKw");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Mystery</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBd4QSAe0YsHe3GQ18mGA58iWSIRsHVUqKgvCvujPSellMOSEAp_NsZ1D1l4kxrRaYEzJtlo-4yRHCXyEnPKIxQ-Xv7BwKPdK9ZmGo4WG_jznku-cm00D3W1mKjmdxvwkJ9D-AADq5KLp5Jpwqj6fji49_53a8cpUPddJ-V4D7-7pyLXXxFSlDRMmAuYCj90uWihDBfOX3lBfGqHhZFyVfs_7YXXd0VHLA3SbR97iUy5JhquMH9DkQHVpiD2GILSN5CvJ0VALIYnS0");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Thriller</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRnq-9MXyzbxT-rgwhaKIudj8_GvsgU2mdckMGfcRGnT98sufqMVQoAu7Ps-kU4Oc0QXBZlrsDlc7DFsPOeoUvqU1yW_QyRw_oXHeiTZKpq8MfMT76sFsVRW5SxrT_K-A_gQYojjEOuUBWMGU858t8s1exU6e-MhpgzuVZRiS9t8lfdj4y0ZjPCCS-vm513S9IpXK6ql3F_Y5RMSwH0d9ApoDfeeOmcphuI0YFFZ8ipTEVYDWlnQzMxhbpH31-TBqiHnXlAqhkVls");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Historical Fiction</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfK6QUu7lFa8MlDR4A6hLh3mdv3FYdlvV9v4E2Lnmm9z7PiEGJhKkZDOjuL9ZfzongIDcuCP4AuDx81KSz5eA2JQ2gtz4UZVZwLt4SZm2ptVNxBDgMwDVPt9t3nztXnVGRXKyPaVTBYXqSEhiepDedr6hx21V1mfInUPs1OJz90ZGH_K3UP1vJehoGMY5k-k82wgyMeRM3eFO8ZlmxVIRZUjEPxn_zy6AahkBbDxFo92IcLsLo_b3fI1jdGXkHxv8IBPPxOOepUHo");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Biography</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAheHm6D4JKmok9HHPPU2Qiu0GJfiomLLQiGMsuhNJo2xyF3gdY6_799rvvd_45sZ67jkWa0d10qFYMwSMqpjdr7RLJsJ0O15wbWoQxFlVrfouQ-kFf0n7pzZeNB1bqPkB1xowxVaYMPHIcVKPKYyN8To4_9Z4x04Rj8qTBpJsVGW2rrHYPe3f36XsydiV73l3gR3PL9tPmnNIFvthvTJVMQvHtrVw649hDTTp8DhbNuK0iDUsn_NpW_N9yJXA_7DoOmLZyqUIaOU4");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Self-Help</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAF_czHry8k1yEndyCEAP4JeZyKATZ27ZJi4qAlnz0uEbj3veQuFv_iQzuNAVcQ6gXdCORz_4-uf6PBqliTnvcOnvtTsmdhwIvYpjp4wwE8-u_Uc-tUo6BbprPWKw_bmj4yvA15m-XfRoN0yD3wgx7gJe85qH1EF5rf3E9I2137Bzdf8GE2D7hI0xePXHTlEuh2ccLWlGbd8NGKUfJSJMjuyaqWX7JgzBCXUve6za6SbcdGzAFgCiHW0Cz_spLwUYs0NdcvR0YHTJ8");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Business</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAF-dnY4fqoqyMcuKgrMSB4o5L6EjO4HrZJzGsEeNliC4A8-uBJ7x88egZjW1h8DQZVsqqYT21bxsIuwAzYURVosk9hiGkfxQkow-dFqx470ewdNGpAu5-FmVVswgVXoTKrCyO3TzUqUAG-YnJyyRhI8KW3yN_dqS97x-KE_IKWnd819Ok99FF_kcF__mswxsdR9KVfVJFRadFXstpnN-skyDYne_CDN8XgCnVJk1KKM84Xmo_-_CxOjTLtb25dDHfkEcogDOVgwxE");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Children's Books</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKsWsX2tT120-KaFPu6TpJe1ylFWuY1wVWFtL4__sMhXp83GK3Qbqlau2eWQLjyVjcwqluQbYQZBC75UgmOsnaIBVoblaplUn0I8s5-6-qStOxeepEiPSwt84s1GFAPD73qyneGGe-mlErxwtNXkLO9w8WFpuUdI6K9X9eGXMbBfbCMSEnVEiwD5saFEt9L8axRUz696XnYyVTDB4cQXVaumLKvJ1mX5IS9x2oiLxzWmMcTreNFExcAv6u7ovpgcgwKl_Opo656rI");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Young Adult</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
