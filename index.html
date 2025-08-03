@@ -10,13 +10,13 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
-    <title>Project Finland</title>
+    <title>LOVI</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#1f1a14] dark group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#231F20] dark group/design-root overflow-x-hidden" style='font-family: "Noto Serif", "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
         
         <header class="border-b border-solid border-b-[#40362b] px-4 sm:px-10 py-3">
@@ -80,7 +80,9 @@
 
         <div class="flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
+            <div class="@container relative overflow-hidden">
+                  
+              <!--
               <div class="@[480px]:p-4">
                 <div
                   class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
@@ -117,7 +119,7 @@
                       />
                       <div class="flex items-center justify-center rounded-r-lg border-l-0 border border-[#5c4d3d] bg-[#2e261f] pr-[7px]">
                         <button
-                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#cc9865] text-[#1f1a14] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#cc9865] text-[#231F20] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
                         >
                           <span class="truncate">Search</span>
                         </button>
@@ -126,8 +128,55 @@
                   </form>
                 </div>
               </div>
+              -->
+
+              <!-- Slides -->
+              <div class="slider-slide transition-opacity duration-700 ease-in-out">
+                <!-- Your slide content (duplicate for more slides) -->
+                <div class="@[480px]:p-4">
+                  <div
+                    class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-14 @[480px]:px-10"
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuADBxx7JyZUxgg-baIFO97PY8Kx_HClfL3q69LLCbgPuPYv8NewlmKSTisOYbaC7vxhuxSOxd8jIPaKRz6IDesRKPGb8dnQE689zoRyUal1a56A3AZcoMQ2I7nccu7Xt8pURZImif6YpLNndIijlcb-rgma4yKHgfW48hIpSE4iUSt9p4boqYbXSiREuV8iGCs6omZITyfgGaYB9gRpOjeujA7mjMoYf8Ezyk6q3MuPzOXuc5AHxVnQ4qfl6Sf518JNgBKxMaqhSm8");'
+                  >
+                    <div class="flex flex-col gap-2 text-left">
+                      <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                        Listen to your next great story
+                      </h1>
+                      <h2 class="text-white text-sm @[480px]:text-base">
+                        Stream or download from our library of audiobooks, including new releases and best sellers.
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Add more .slider-slide divs for more slides -->
+              <!-- Example second slide -->
+              <div class="slider-slide hidden transition-opacity duration-700 ease-in-out">
+                <div class="@[480px]:p-4">
+                  <div
+                    class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-14 @[480px]:px-10"
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://images.unsplash.com/photo-1607746882042-944635dfe10e");'
+                  >
+                    <div class="flex flex-col gap-2 text-left">
+                      <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                        Discover a new world of sound
+                      </h1>
+                      <h2 class="text-white text-sm @[480px]:text-base">
+                        Explore hand-picked audio stories crafted for every mood and moment.
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="absolute bottom-5 right-5 flex gap-2 z-10">
+                <button onclick="prevSlide()" class="bg-black/50 text-white px-3 py-1 rounded hover:bg-black/70">‹</button>
+                <button onclick="nextSlide()" class="bg-black/50 text-white px-3 py-1 rounded hover:bg-black/70">›</button>
+              </div>
             </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Popular Audiobooks</h2>
+
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Audiobooks</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <a class="flex flex-col gap-3 pb-3" href="audiobook-details.html">
                 <div
@@ -190,7 +239,7 @@
                 </div>
               </a>
             </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recommended Audiobooks</h2>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Podcasts</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <a href="audiobook-details.html" class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
                 <div
@@ -263,4 +312,5 @@
   </body>
 
   <script src="js/menu.js"></script>
+  <script src="js/slider.js"></script>
 </html>
